@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toey_kirati.annimalforfun.Game">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_margin"
+        android:text="@string/question"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/h1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvQuestion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bird_02" />
+
+    <ImageButton
+        android:id="@+id/imvVolumn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="68dp"
+        android:background="@null"
+        android:onClick="playsound"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/imvQuestion"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvQuestion"
+        app:srcCompat="@drawable/volume" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#6ffa0b"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bt4"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6ffa0b"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/bt3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt3" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6ffa0b"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/bt4"
+        app:layout_constraintRight_toLeftOf="@+id/bt2"
+        app:layout_constraintTop_toTopOf="@+id/bt4" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6ffa0b"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintLeft_toRightOf="@+id/bt1"
+        app:layout_constraintRight_toLeftOf="@+id/bt3"
+        app:layout_constraintTop_toTopOf="@+id/bt1" />
+</android.support.constraint.ConstraintLayout>
